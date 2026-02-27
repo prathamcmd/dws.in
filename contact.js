@@ -4,8 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  const form        = document.getElementById('contactForm');
-  const successBox  = document.getElementById('formSuccess');
+  const form = document.getElementById('contactForm');
 
   if (!form) return;
 
@@ -17,13 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
     btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
 
     emailjs.sendForm(
-      'service_11z4vq8',   /* EmailJS Service ID */
-      'template_ia20z9t',  /* EmailJS Template ID */
+      'service_11z4vq8',
+      'template_ia20z9t',
       this
     )
     .then(function() {
-      form.style.display = 'none';
-      if (successBox) successBox.classList.add('show');
+      window.location.href = "thank-you.html";  // 🔥 This is the important line
     })
     .catch(function(error) {
       alert('❌ Failed to send. Please call us directly at +91 8130201945.');
