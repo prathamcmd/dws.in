@@ -20,8 +20,8 @@ body { padding-top: 88px; background: var(--white); }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1743742566156-f1745850281a') center / cover no-repeat;
-  opacity: .18;
+  background: url('https://images.pexels.com/photos/32974053/pexels-photo-32974053.jpeg?cs=srgb&dl=pexels-chris-wade-ntezicimpa-564856410-32974053.jpg&fm=jpg') center / cover no-repeat;
+  opacity: .45;
 }
 
 /* Decorative circles */
